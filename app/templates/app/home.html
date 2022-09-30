@@ -1,0 +1,50 @@
+
+
+{% extends 'app/base.html' %}
+
+{% block contenido %}
+{% load static %}
+
+<div class="arriendos" id="home">
+
+    <div class="parrafo">
+       <h2>
+        Arrienda y disfruta tu estadia
+       </h2> 
+       <p>
+        Disfruta de las mejores vacaciones en el litoral central y en el sur de chile con Turismo Real, los mejores departamentos
+        estan a su disposicion en diversos tipos de pagos, ubicados en zonas hermosas y con una vista que te va a encantar. Ademas, podras 
+        optar por un tour que puedes agregar a tu servicio facilmente.
+       </p>
+    </div>
+
+    {% for d in departamento %}
+    <div  class="arriendo">
+
+        
+        <div class="contenedor">
+            <img src="{% static 'app/img/casas arriendos.jpg' %}" alt="1" >
+
+            <div class="detalles">
+                
+                <h1 class="ah1">{{ d.region_id_region }}</h1>
+                
+                <h4 class="ah2">{{ d.descripcion}}</h4>
+                <h3 class="ah3">${{ d.valor }} dia y noche</h3>
+                <input type="reset" value="Arrendar" class="btn btn-danger">
+            </div>
+           
+        </div>
+
+    </div>
+    {% endfor %}
+
+    
+    
+    
+
+</div>
+
+
+
+{% endblock %}

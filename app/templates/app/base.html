@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arriendos</title>
+    {% load static %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'app/css/style1.css'%}">
+   
+    
+</head>
+
+<body>
+
+    <header>
+
+        
+        <div class="ini">
+            <img src="{% static 'app/img/1.png' %}" alt="logo" class="contenedor_logo">
+            <nav class="inicio">
+                <ul>
+                    <li>
+                        <a href="{% url 'home' %}">Inicio</a>
+                        
+                    </li>
+                    <li>
+                        <a href="{% url 'arrendar' %}">Arrendar</a>
+                    </li>
+                    <li><a href="{% url 'reserva' %}">Reservas</a>
+                    </li>
+                    <li><a href="{% url 'departamentos' %}">Lista Departamentos</a>
+                    </li>
+                    <li><a href="{% url 'Cdepartamentos' %}">Agregar Depto</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="logins">
+            <nav class="loginss">
+                <ul>
+                    <li>
+                        <a href="{% url 'registro' %}">Registro</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'ingresar' %}">Login</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <div id="contenido">
+
+       {% block contenido %}
+       {% endblock %}
+
+    </div>
+
+<footer>
+
+    <div class="container-footer-all">
+
+        <div class="container-body">
+        
+            
+
+
+            <div class="colum1">
+                <h1>Gracias por confiar en nosotros.</h1>
+
+                <p>En turismo real nos preocupamos por tu comodidad y por tu tiempo, no lo pierdas más 
+                    buscando en costosos hoteles y cotiza aquí, te aseguramos una experiencia inolvidable y 
+                    una agradable estadía en conjunto con nuestro equipo de profesionales.</p>
+
+            </div>
+
+            <div class="colum2">
+
+                <h1>Redes Sociales</h1>
+
+                <div class="row">
+                    <img src="{% static 'app/icon/facebook.png' %}">
+                    <label>Siguenos en Facebook</label>
+                </div>
+                <div class="row">
+                    <img src="{% static 'app/icon/twitter.png' %}">
+                    <label>Siguenos en Twitter</label>
+                </div>
+                <div class="row">
+                    <img src="{% static 'app/icon/instagram.png' %}">
+                    <label>Siguenos en Instagram</label>
+                </div>
+                <div class="row">
+                    <img src="{% static 'app/icon/google-plus.png' %}">
+                    <label>Siguenos en Google</label>
+                </div>
+
+
+
+            </div>
+
+            <div class="colum3">
+
+                <h1>Información Contactos</h1>
+
+
+
+                <div class="row2">
+                    <img src="{% static 'app/icon/smartphone.png' %}">
+                    <a href="">
+                        <label>+56 9521 4521</label>
+                </div>
+
+                <div class="row2">
+                    <img src="{% static 'app/icon/contact.png' %}">
+
+                    <label>Contacto.real@turismoreal.com</label>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container-footer">
+        <div class="footer">
+            <div class="copyright">
+                © 2023 Todos los derechos Reservados | <a href="">Turismo Real</a>
+            </div>
+
+            <div class="information">
+                <a href="">Privación y Politica</a> | <a href="">Términos y
+                    Condiciones</a>
+            </div>
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+
+</html>

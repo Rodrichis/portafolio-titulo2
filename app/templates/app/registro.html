@@ -1,0 +1,30 @@
+{% extends 'app/base.html' %}
+
+{% block contenido %}
+{% load static %}
+
+    {% load crispy_forms_tags %}
+    
+    <div class="container" id="registro">
+
+            <div class="card-body" id="formularioRegistro" >
+
+                <h2>Registrate</h2>
+                <hr>
+                <form class="formularioRegistro" action="" method="post">
+
+                    {% csrf_token %}
+                    {{ form1 }}
+                    
+                    <br><br>
+                    <input type="submit" value="registrarse" class="btn btn-success float-right">
+                    <br><br>
+                    {{mensaje}}
+                </form>
+
+            </div>
+        
+
+    </div>
+
+{% endblock %}

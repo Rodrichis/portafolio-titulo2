@@ -1,0 +1,52 @@
+
+
+
+{% extends 'app/base.html' %}
+
+{% block contenido %}
+{% load static %}
+
+<div class="contenedor" id="departamento">
+
+       
+        <table class="table table-dark">
+
+            <tr>
+                <th>ID Departamento</th>
+                <th>Numero Departamento</th>
+                <th>Esta acondicionado</th>
+                <th>Direccion</th>
+                <th>Habitaciones</th>
+                <th>Baños</th>
+                <th>Superficie</th>
+                
+            </tr>
+
+
+            {% for d in departamento %}
+            <tr>
+                <td>{{ d.id_departamento }}</td>
+                <td>{{ d.numero_depto }}</td>
+                <td>{{ d.acondicionado }}</td>
+                <td>{{ d.direccion }}</td>
+                <td>{{ d.habitaciones }}</td>
+                <td>{{ d.banios }}</td>
+                <td>{{ d.superficie }} M2</td>
+                <td>
+                    <a href="#">Modificar</a>
+                    
+                    <a id="btnDepartamento" href="{% url 'eliminar_departamento' d.id_departamento %}"  >Eliminar</a>
+                    
+
+                    
+                </td>
+
+            </tr>
+            {% endfor%}
+        </table>
+
+</div>
+
+
+
+{% endblock %}

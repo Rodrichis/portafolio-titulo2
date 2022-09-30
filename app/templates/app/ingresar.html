@@ -1,0 +1,25 @@
+
+
+{% extends 'app/base.html' %}
+
+{% block contenido %}
+{% load static %}
+
+
+    <div class="FormularioLogins" id="login">
+        <form action="/action_page.php">
+            
+            <label for="fname">Usuario:</label><br>
+            <input type="text" id="fname" value="" placeholder="ingrese su usuario"><br><br>
+            <label for="fname">Contraseña:</label><br>
+            <input type="password" id="fname" value="" placeholder="ingrese su contraseña"><br><br><br>
+            <input type="submit" value="registrarse" class="btn btn-success float-right"><br><br>
+        </form>
+    </div>
+    <br><br><br><br><br>
+
+
+
+
+
+{% endblock %}

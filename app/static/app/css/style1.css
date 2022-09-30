@@ -1,0 +1,414 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+    width: 100%;
+    height: 72px;
+    background-color:rgb(34, 32, 32);
+    display: flex;
+}
+
+header > div {  
+    width: 50%;
+}
+body {
+    
+    background-image: linear-gradient(rgba(5,7,12,0.35),rgba(5,7,12,0.35)) , url("https://img.freepik.com/foto-gratis/edificios-grandes-oficinas_1127-2282.jpg?w=1380&t=st=1664165250~exp=1664165850~hmac=f91be76d215bc61e168afec1e92069c695bac11f1ffbb570812147db6ecf7de0");  
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 90%;
+    
+    
+}
+
+.parrafo{
+    
+    background-color: #131313;
+    color: rgb(255, 255, 255);
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: justify;
+    border-radius: 15px 15px 15px 15px;
+    
+}
+
+#FormularioRegistro{
+    border: 5px solid rgb(0, 0, 0);
+}
+.FormularioLogins{
+    
+    height: 350px;
+    background-color:rgb(34, 32, 32);
+    color: aliceblue;
+    border: 3px solid rgb(0, 0, 0);
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    text-align: justify;
+    border-radius: 5px 5px 5px 5px;
+    transform: translate(50%, 50%);
+
+    
+}
+
+.ini{
+    display: flex;
+}
+
+.inicio {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    margin-left: 15px;
+}
+
+.loginss {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    margin-right: 15px;
+
+    
+}
+
+nav>ul>li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav>ul>li>a {
+    color: mintcream;
+    text-decoration: none;
+}
+
+.contenedor_logo {
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 70px;
+    margin-left: 10px;
+    border-bottom: 1px;
+    background-color: rgb(252, 252, 252);
+    border-radius: 40px 7px 40px 7px;
+    border: 3px solid white;
+    
+    
+}
+
+
+
+#home {
+    width: 85%;
+    margin: 40px auto;
+    min-height: 80vh;
+    
+}
+#login{
+
+    width: 10cm;
+    margin-left: 30%;
+    margin-bottom: 15%; 
+
+}
+#registro{
+    width: 300px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border: 3px solid rgb(0, 0, 0);
+    background-color: #1d1d1d;
+    color: #ffffff;
+    border-radius: 7px 7px 7px 7px;
+}
+#Cdepartamento{
+    width: 85%;
+    margin: 40px auto;
+    min-height: 80vh;
+}
+#FormRegistroDepartamento{
+    height: 350px;
+    background-color:rgb(34, 32, 32);
+    color: aliceblue;
+    border: 3px solid rgb(0, 0, 0);
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    text-align: justify;
+    border-radius: 5px 5px 5px 5px;
+    transform: translate(50%, 50%);
+
+}
+#departamento{
+    width: 85%;
+    margin: 40px auto;
+    min-height: 80vh;
+}
+#departamento {
+    width: 85%;
+    margin: 40px auto;
+    min-height: 80vh;
+}
+
+#reserva{
+    width: 85%;
+    margin: 40px auto;
+    min-height: 80vh;
+}
+#arrendar{
+    width: 85%;
+    margin: 40px auto;
+    min-height: 80vh;
+}
+
+.arriendos {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.arriendos > .arriendo {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.arriendos .arriendo .contenedor{
+    width: 100%;
+    background-color:rgb(34, 32, 32);
+    margin: auto;
+    display: flex;
+    border: 5px;
+    
+    
+}
+
+.arriendos .arriendo img {
+    width: 25%;
+    height: 300px;
+    border: 3px solid rgb(59, 59, 59);
+}
+
+.arriendos .arriendo .contenedor .detalles {
+    padding: 10px;
+    color: white;
+    
+}
+
+.arriendos .arriendo .contenedor .detalles .ah1 {
+    padding: 10px;
+     
+}
+
+.arriendos .arriendo .contenedor .detalles .ah2 {
+    padding: 10px;
+     
+}
+
+.arriendos .arriendo .contenedor .detalles .ah3 {
+    padding: 10px;
+     
+}
+.arriendos > .arriendo  >.contenedor > .detalles > .ah4 {
+    padding: 10px;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Footer en si */
+footer{
+    width: 100%;
+    background: #202020;
+    color: white;   
+    
+}
+.footer{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;  
+    padding: 20px;
+}
+
+.container-footer-all{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+}
+
+.container-body{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Columnas de contenido */
+.colum1{
+    max-width: 400px;
+}
+
+.colum1 h1{
+    font-size: 25px;
+}
+
+.colum1 p{
+    font-size: 18px;
+    color: #C7C7C7;
+    margin-top: 20px;
+}
+
+.colum2{
+    max-width: 400px;
+    
+}
+
+.colum2 h1{
+    font-size: 22px;
+}
+
+.colum3{
+    max-width: 400px;
+}
+
+.colum3 h1{
+    font-size: 22px;
+}
+
+
+/* Filas */
+.row{
+    margin-top: 20px;
+    display: flex;
+}
+
+.row img{
+    width: 36px;
+    height: 36px;
+}
+
+.row label{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #C7C7C7;
+}
+.row2{
+    margin-top: 20px;
+    display: flex;
+}
+
+.row2 img{
+    width: 36px;
+    height: 36px;
+}
+
+.row2 label{
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 140px;
+}
+
+.container-footer{
+    width: 100%;  
+    background: #101010;
+}
+
+/* Escritura inferior */
+.copyright{
+    color: #000000;
+
+}
+
+.copyright a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.information a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Resposive */
+@media screen and (max-width: 1100px){
+    
+    .container-body{
+        flex-wrap: wrap;
+    }
+    
+    .colum1{
+        max-width: 100%;
+    }
+    
+    .colum2,
+    .colum3{
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    *{
+        text-decoration: none;
+
+    }
+    .parrafo{
+    
+        background-color:rgb(34, 32, 32);
+        color: aliceblue;
+        border: 3px solid rgb(0, 0, 0);
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        text-align: center;
+        text-size-adjust: 3px;
+        font-size: 10px;
+        
+    }
+    header {
+        padding-top: 10px;
+        width: 100%;
+        height: 72px;
+        background-color:rgb(34, 32, 32);
+        display: flex;
+    }
+    .contenedor_logo {
+        display: flex;
+        align-items: center;
+        width: 70px;
+        height: 40px;
+        margin-left: 10px;
+        border-bottom: 1px;
+        background-color: rgb(252, 252, 252);
+        border-radius: 40px 7px 40px 7px;
+        border: 3px solid white;
+        
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
