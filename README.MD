@@ -4,8 +4,12 @@
 
     Nota: se debe agregar python al path
 
-2. Ir al directorio del proyecto y en la terminal ejecutar: ` python manage.py migrate `
+2. Intalar los requerimientos : ` pip install -r requirements.txt `
 
-3. Correr el servidor : ` python manage.py runserver `
+3. Ir al directorio del proyecto y en la terminal ejecutar: ` python manage.py migrate `
 
- XD
+    Nota: Puede que deban cambiar el usuario y contraseña de la base de datos en el archivo settings
+
+4. Correr el servidor : ` python manage.py runserver `
+
+ 
